@@ -1,17 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 import CourseModulesWithProps from "../../components/exercises/03_props";
 
-
-
 const meta = {
-  title: 'Exercises/03 - component with props',
+  title: "Exercises/03 - component with props",
   component: CourseModulesWithProps,
 } satisfies Meta<typeof CourseModulesWithProps>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
-const name = "MSc Enterprise Software Systems";
+const name = "MSc Enterprise Software Systemssssssssssss";
 const twoModules = [
   {
     name: "Cloud Architecture",
@@ -23,11 +21,16 @@ const twoModules = [
     noLectures: 2,
     noPracticals: 3,
   },
+  {
+    name: "Enterprise App Dev",
+    noLectures: 22,
+    noPracticals: 33,
+  },
 ];
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Basic: Story = {
-  args:{
-    modules:twoModules,
+  args: {
+    modules: twoModules,
     course: name,
-  }
+  },
 };
